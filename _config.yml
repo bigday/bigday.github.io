@@ -83,9 +83,9 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: dansonia
-disqus_show_comment_count: true
+#disqus_short_name: dansonia
+#disqus_show_comment_count: true
 
 # duoshuo Comments
-#duoshuo_comments: true
-#duoshuo_short_name: 9077079
+duoshuo_comments: true
+duoshuo_short_name: 9077079
