@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[风继续吹]]></title>
-  <link href="http://bigday.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Test | 风继续吹]]></title>
+  <link href="http://bigday.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://bigday.github.io/"/>
   <updated>2014-09-27T16:07:13+08:00</updated>
   <id>http://bigday.github.io/</id>

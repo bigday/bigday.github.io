@@ -7,7 +7,7 @@
 	<meta name="author" content="adansonia">
 
 	
-	<meta name="description" content="something New Test ios应用崩溃的时候，SDK提供了一个NSSetUncaughtExceptionHandler来处理异常。 NSSetUncaughtExceptionHandler(handleRootException); &hellip;">
+	<meta name="description" content="test 评论 风继续吹 我劝你早点归去你说你不想归去 只叫我抱着你 悠悠海风轻轻吹冷却了野火堆 我看见伤心的你你叫我怎舍得去 风继续吹 风继续吹 哭态也绝美 如何止哭只得轻吻你发边让风继续吹 不忍远离 心里极渴望希望留下伴着你 风继续吹不忍远离 心里亦有泪不愿流泪望着你 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -35,7 +35,7 @@
 			<header id="header" class="inner"><div class="profilepic">	
 	<script src="/javascripts/md5.js"></script>
 	<script type="text/javascript">
-		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("mybigday@qq.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
 	</script>
 </div>
 <h1><a href="/">风继续吹</a></h1>
@@ -48,9 +48,13 @@
 <nav id="sub-nav">
 	<div class="social">
 		
+		<a class="weibo" href="http://www.weibo.com/sephirex" title="Weibo">Weibo</a>
 		
 		
 		
+		
+		
+		<a class="github" href="https://github.com/bigday" title="GitHub">GitHub</a>
 		
 		
 		
@@ -95,138 +99,59 @@
   
 
 
-<time datetime="2014-09-27T14:09:10+08:00" data-updated="true" itemprop="datePublished"></time></div>
+<time datetime="2014-09-27T14:23:32+08:00" data-updated="true" itemprop="datePublished"></time></div>
 		<div class="tags">
 
 
-	<a class='category' href='/blog/categories/something/'>something</a>
+	<a class='category' href='/blog/categories/test/'>test</a>
 
 
 </div>
 		
+			<span class="comments"><a href="/blog/2014/09/27/letsgo/#disqus_thread">评论</a></span>
+		
 	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2014/09/27/new-test/" itemprop="url">New Test</a></h1>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/09/27/letsgo/" itemprop="url">风继续吹</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>ios应用崩溃的时候，SDK提供了一个NSSetUncaughtExceptionHandler来处理异常。</p>
+		<p>我劝你早点归去你说你不想归去</p>
 
-<p><code>NSSetUncaughtExceptionHandler(handleRootException);</code></p>
+<p>只叫我抱着你</p>
 
-<p>绑定到<code>handleRootException</code>中让其函数来处理异常。</p>
+<p>悠悠海风轻轻吹冷却了野火堆</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">static</span> <span class="kt">void</span> <span class="nf">handleRootException</span><span class="p">(</span> <span class="bp">NSException</span><span class="o">*</span> <span class="n">exception</span> <span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="bp">NSString</span><span class="o">*</span> <span class="n">name</span> <span class="o">=</span> <span class="p">[</span> <span class="n">exception</span> <span class="n">name</span> <span class="p">];</span>
-</span><span class='line'>    <span class="bp">NSString</span><span class="o">*</span> <span class="n">reason</span> <span class="o">=</span> <span class="p">[</span> <span class="n">exception</span> <span class="n">reason</span> <span class="p">];</span>
-</span><span class='line'>    <span class="bp">NSArray</span><span class="o">*</span> <span class="n">symbols</span> <span class="o">=</span> <span class="p">[</span> <span class="n">exception</span> <span class="n">callStackSymbols</span> <span class="p">];</span>
-</span><span class='line'>    <span class="bp">NSMutableString</span><span class="o">*</span> <span class="n">strSymbols</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span> <span class="bp">NSMutableString</span> <span class="n">alloc</span> <span class="p">]</span> <span class="n">init</span> <span class="p">];</span>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span> <span class="bp">NSString</span><span class="o">*</span> <span class="n">item</span> <span class="k">in</span> <span class="n">symbols</span> <span class="p">)</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>        <span class="p">[</span> <span class="n">strSymbols</span> <span class="nl">appendString</span><span class="p">:</span> <span class="n">item</span> <span class="p">];</span>
-</span><span class='line'>        <span class="p">[</span> <span class="n">strSymbols</span> <span class="nl">appendString</span><span class="p">:</span> <span class="s">@&quot;</span><span class="se">\r\n</span><span class="s">&quot;</span> <span class="p">];</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="bp">NSString</span><span class="o">*</span>   <span class="n">errorInfo</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSString</span> <span class="nl">stringWithFormat</span><span class="p">:</span><span class="s">@&quot; *** Terminating app due to uncaught exception %@ , reason: %@  </span><span class="se">\r\n</span><span class="s">  *** First throw call stack: </span><span class="se">\r\n</span><span class="s">(</span><span class="se">\r\n</span><span class="s">  %@</span><span class="se">\r\n</span><span class="s">)&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">reason</span><span class="p">,</span> <span class="n">strSymbols</span><span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">logToFile</span><span class="p">(</span><span class="n">errorInfo</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>我看见伤心的你你叫我怎舍得去</p>
 
+<p>风继续吹</p>
 
-<p>这个函数将崩溃的信息转入字符串之后存入文件中。</p>
+<p>风继续吹</p>
 
-<p>我封装了其中的方法，写了一个崩溃报告收集的接口。只需在应用开始时调用即可。</p>
+<p>哭态也绝美</p>
 
-<p>会将崩溃文件按时间保存在文件夹中，当应用每次启动的时候上传到服务器之后便删除（网络连接的自行加入）。</p>
+<p>如何止哭只得轻吻你发边让风继续吹</p>
 
-		
-		
-	</div>
+<p>不忍远离</p>
 
-</article>
+<p>心里极渴望希望留下伴着你</p>
 
+<p>风继续吹不忍远离</p>
 
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
+<p>心里亦有泪不愿流泪望着你</p>
 
+<p>过去多少快乐记忆何妨与你一起去追</p>
 
+<p>要将忧郁苦痛洗去柔情蜜意我愿记取</p>
 
+<p>要强忍离情泪未许它向下垂</p>
 
+<p>愁如锁眉头聚别离泪始终要下垂</p>
 
+<p>我已令你快乐你也令我痴痴醉</p>
 
+<p>你已在我心不必再问记着谁</p>
 
+<p>留住眼里每滴泪为何仍断续流默默垂</p>
 
-  
-
-
-<time datetime="2014-09-27T00:00:00+08:00" data-updated="true" itemprop="datePublished"></time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2014/09/27/test/" itemprop="url">Test</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>第一梯队</p>
-
-<table>
-<thead>
-<tr>
-<th>时间 </th>
-<th> 地点</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>220 </td>
-<td> 曹操扑街</td>
-</tr>
-<tr>
-<td>681 </td>
-<td> 大唐了吧</td>
-</tr>
-<tr>
-<td>1200 </td>
-<td> 宋</td>
-</tr>
-<tr>
-<td>1500 </td>
-<td> 元</td>
-</tr>
-<tr>
-<td>不要纠结对错</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-
-<hr />
-
-<p>layout: post
-title: &ldquo;Test&rdquo;
-date: 2014-09-27 12:30:51 +0800
-comments: true</p>
-
-<h2>categories: </h2>
+<p>为何仍断续流默默垂</p>
 
 		
 		
@@ -238,7 +163,7 @@ comments: true</p>
 <nav id="pagenavi">
     
     
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+    <div class="center"><a href="/blog/archives">文章列表</a></div>
 </nav></div>
 			</div>
 			<footer id="footer" class="inner"><p>
@@ -255,6 +180,19 @@ Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Sha
 })(jQuery);
 </script> <!-- Delete or comment this line to disable Fancybox -->
 
+
+<script type="text/javascript">
+      var disqus_shortname = 'dansonia';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
