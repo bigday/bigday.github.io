@@ -7,7 +7,8 @@ title: 风继续吹
 subtitle: A blogging framework for 峇峇.
 author: adansonia
 simple_search: https://www.bing.com/search
-description:
+description: 如是我闻
+keywords: logdown
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +20,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: mybigday@qq.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -44,7 +45,7 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 paginate: 10          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "阅读全文;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
@@ -64,8 +65,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: bigday
+github_repo_count: 2
 github_show_profile_link: true
 github_skip_forks: true
 
@@ -73,11 +74,18 @@ github_skip_forks: true
 pinboard_user:
 pinboard_count: 3
 
+#weibo
+weibo_user: sephirex # 微博数字 ID 或域名 ID
+weibo_share: true 
+
 # Delicious
 delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: dansonia
+disqus_show_comment_count: true
 
+# duoshuo Comments
+#duoshuo_comments: true
+#duoshuo_short_name: 9077079
