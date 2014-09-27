@@ -73,8 +73,8 @@ a {
 html {
   background: $page-bg image-url('line-tile.png') top left;
 }
-body {
-  > div {
+body{
+  > div :not(#ds-wrapper){
     background: $sidebar-bg $noise-bg;
     border-bottom: 1px solid $page-border-bottom;
     > div {
