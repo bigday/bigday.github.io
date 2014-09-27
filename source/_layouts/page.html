@@ -18,18 +18,10 @@ layout: default
 </section>
 {% endif %}
 
-{% if  site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %}
-<section id="评论">
- <div id="评论" aria-live="polite">{% include post/duoshuo.html %}</div>
+<!--添加多说模块-->
+{% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %}
+  <section id="评论">
+    <!-- <h1 class="title">Comments</h1> -->
+    <div id="评论" aria-live="polite">{% include post/duoshuo.html %}</div>
   </section>
 {% endif %}
-
-{% unless page.sidebar == false %}
-<aside class="sidebar">
-  {% if site.page_asides.size %}
-    {% include_array page_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
-{% endunless %}
