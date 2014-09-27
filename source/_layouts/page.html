@@ -18,12 +18,12 @@ layout: default
 </section>
 {% endif %}
 
-{% if  page.comments == true %}
-<section>
- {% include post/duoshuo.html %}
+{% if  site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %}
+<section id="评论">
+ <div id="评论" aria-live="polite">{% include post/duoshuo.html %}</div>
   </section>
 {% endif %}
-</div>
+
 {% unless page.sidebar == false %}
 <aside class="sidebar">
   {% if site.page_asides.size %}

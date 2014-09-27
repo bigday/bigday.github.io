@@ -16,12 +16,12 @@ single: true
 
   </footer>
   </article>
-{% if page.comments == true %}
+{% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %}
   <section>
-   {% include post/duoshuo.html %}
+   <div id="评论" aria-live="polite">{% include post/duoshuo.html %}</div>
   </section>
  {% endif %}
-</div>
+
 {% unless page.sidebar == false %}
 <aside class="sidebar">
   {% if site.post_asides.size %}
