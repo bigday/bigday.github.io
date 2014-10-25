@@ -1,3 +1,3 @@
-This is [My Blog](bigday.github.io)
-================
+This is [My Blog](http://bigday.github.io)
+==========
 to log something...
